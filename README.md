@@ -53,7 +53,7 @@ The voice the model uses to respond.
 #### AGENT_URLS
 
 A comma-separated list of WebSocket server URLs for real-time communication with specified agents.
-* Default value: `ws://agent`
+* Default value: `ws://talkops`
 
 ## Join the community
 

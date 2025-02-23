@@ -6,7 +6,7 @@ import voices from "./parameters/voices.json" assert { type: "json" };
 
 const kernel = new Kernel("Google Gemini Multimodal Live API");
 
-kernel.setDockerHubRepository("talkops/talkops-kernel-google-gemini-multimodal-live-api");
+kernel.setDockerRepository("talkops/talkops-kernel-google-gemini-multimodal-live-api");
 
 kernel.setEnvironmentVariables({
   API_KEY: {

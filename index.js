@@ -6,7 +6,13 @@ import voices from "./parameters/voices.json" assert { type: "json" };
 
 const kernel = new Kernel("Google Gemini Multimodal Live API");
 
-kernel.setDockerRepository("talkops/talkops-kernel-google-gemini-multimodal-live-api");
+kernel.setDockerRepository(
+  "talkops/talkops-kernel-google-gemini-multimodal-live-api"
+);
+
+kernel.setDescription(
+  "This Kernel based on [Google Gemini Multimodal Live API](https://ai.google.dev/gemini-api/docs/multimodal-live) defines and configures the Agent's artificial intelligence. It acts as the processing engine for real-time interactions, ensuring the analysis and understanding of user requests in real-time."
+);
 
 kernel.setEnvironmentVariables({
   API_KEY: {
@@ -25,7 +31,7 @@ kernel.setEnvironmentVariables({
   },
   VOICE: {
     defaultValue: "Aoede",
-    description: "The voice the model uses to respond.",
+    description: "The voice the model uses to respond. [More info](https://ai.google.dev/gemini-api/docs/multimodal-live#voices)",
     availableValues: voices,
   },
 });

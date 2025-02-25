@@ -3,6 +3,7 @@
 
 A TalkOps Kernel made to work with [TalkOps](https://link.talkops.app/talkops).
 
+This Kernel based on [Google Gemini Multimodal Live API](https://ai.google.dev/gemini-api/docs/multimodal-live) defines and configures the Agent&#39;s artificial intelligence. It acts as the processing engine for real-time interactions, ensuring the analysis and understanding of user requests in real-time.
 
 ## Installation Guide
 
@@ -46,7 +47,7 @@ The model.
 
 #### VOICE
 
-The voice the model uses to respond.
+The voice the model uses to respond. [More info](https://ai.google.dev/gemini-api/docs/multimodal-live#voices)
 * Default value: `Aoede`
 * Available values: `Aoede` `Charon` `Fenrir` `Kore` `Puck`
 

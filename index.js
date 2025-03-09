@@ -1,8 +1,8 @@
 import { Kernel, Service, Readme } from "talkops";
 
-import languages from "./parameters/languages.json" assert { type: "json" };
-import models from "./parameters/models.json" assert { type: "json" };
-import voices from "./parameters/voices.json" assert { type: "json" };
+import languages from "./parameters/languages.json" with { type: "json" };
+import models from "./parameters/models.json" with { type: "json" };
+import voices from "./parameters/voices.json" with { type: "json" };
 
 const kernel = new Kernel("Google Gemini Multimodal Live API");
 
